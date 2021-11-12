@@ -1,8 +1,8 @@
-This project uses RL, Proximal Policy Optimization to let multiple agent pairs play Catch.
-In each agent pair, the red Agent tries to catch the blue Agent.
+This project uses a Reinforcement Learning technique called Proximal Policy Optimization to let multiple agent pairs play Tag.
+The red Agent tries to catch the blue Agent, the blue Agent tries not to be catched.
 
-A strong reward gets handed out if the red Agent is near enough to the blue Agent.
-A strong punishment gets handed out if the blue Agent is near enough to the red Agent.
+A reward(+1) gets handed out if the red Agent is near enough to the blue Agent.
+A punishment(-1) gets handed out if the blue Agent is near enough to the red Agent.
 
 Hyperparameters for good observable results:
 agent_pairs = 250
