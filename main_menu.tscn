@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scripts/environment_new.gd" type="Script" id=1]
+[ext_resource path="res://scripts/seeker.py" type="Script" id=4]
+[ext_resource path="res://scripts/hider.py" type="Script" id=6]
+[ext_resource path="res://environment/DirectionalLight.tscn" type="PackedScene" id=20]
+
+[node name="world" type="Spatial"]
+
+[node name="PPO_seeker" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="PPO_hider" type="Node2D" parent="."]
+script = ExtResource( 6 )
+
+[node name="Environments" type="Spatial" parent="."]
+script = ExtResource( 1 )
+
+[node name="DirectionalLight" parent="Environments" instance=ExtResource( 20 )]
+transform = Transform( -0.425159, 0.492697, -0.759269, 0.24072, 0.870201, 0.429889, 0.872522, -1.6846e-08, -0.488576, -17.9549, 6.33853, -11.6682 )
+light_energy = 3.0
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( -4.31172e-08, 0.480009, -0.877264, -7.18286e-09, 0.877264, 0.480009, 1, 2.69979e-08, -3.43773e-08, -19.3681, 17.5601, 0 )
