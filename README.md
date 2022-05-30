@@ -1,3 +1,5 @@
+Demo video: https://www.youtube.com/watch?v=nQ_zgm4jsdc
+
 This project uses a Reinforcement Learning technique called Proximal Policy Optimization to let multiple agent pairs play Tag.
 The red Agent tries to catch the blue Agent, the blue Agent tries not to be catched.
 
